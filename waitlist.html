@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Building the educational future - waitlist">
+    <script src="https://kit.fontawesome.com/b9db8fb452.js" crossorigin="anonymous"></script>
+    <script src="waitlist.js" defer></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" href="/img/bag.png">
+    <title>EasyBuddy Academy | Waitlist Page</title>
+</head>
+
+<body class="bg-black focus:outline-none">
+    <nav class="container inline-flex max-w-full top-0 z-20 fixed bg-gray-900 text-white p-5 justify-between">
+        <div class="text-white font-bold text-sm select-none md:text-2xl">
+            <i class="fas fa-briefcase"></i>&nbsp; EasyBuddy Academy
+        </div>
+        <!--hamburger icon-->
+        <div id="home" class="cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+        </div>
+    </nav>
+    <!--main-->
+    <main>
+        <div class="mt-24 mx-auto">
+            <center>
+                <img src="/img/wait2pic.png" alt="" class="w-3/4 h-48 md:w-2/6 md:h-72" />
+            </center>
+        </div>
+        <center>
+            <div class="w-5/6 mt-5 font-thin text-white text-sm font-sans md:w-4/5 md:text-3xl">
+                <div class="mt-2 font-bold text-2xl md:text-6xl">
+                    Make education your #1 life Saver
+                </div>
+                We are developing to make up and keep up the race in the edu-sector
+            </div>
+        </center>
+        <center>
+            <div class="mt-10">
+                <div class="flex-row align-middle">
+                    <form name="waitlist form" method="POST" action="https://formspree.io/f/mrgjawnn">
+                        <input type="email" id="mail"
+                            class="w-7/12 text-white font-sans font-bold py-2 px-3 bg-gray-800 placeholder:text-sm focus:outline-none md:placeholder:text-lg md:w-2/5 md:text-2xl md:font-bold"
+                            placeholder="Enter mail address" name="mail address">
+                        <button type="submit" id="btn"
+                            class="w-3/12 text-white font-sans py-2 px-3 align-middle bg-indigo-700 -mt-1 focus:outline-none md:w-fit md:py-3 md:px-9 md:-mt-3">
+                            Join
+                        </button>
+                    </form>
+                    <div class="mt-2 hidden text-red-500 text-sm font-thin md:text-md" id="errmsg"></div>
+                </div>
+                <div class="mt-10"></div>
+            </div>
+        </center>
+    </main>
+</body>
+
+</html>
